@@ -1,0 +1,143 @@
+.home {
+  height: 100vh;
+  padding: 100px;
+}
+
+/* .banner {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: row;
+  position: relative;
+} */
+/* .left {
+  padding-left: 80px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  z-index: 15;
+}
+
+.right {
+  width: 70%;
+  position: relative;
+  z-index: 10;
+}
+.rightV {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.typed span {
+  font-size: 45px;
+  display: inline;
+
+  color: #7ca5ff;
+  text-align: left;
+  width: 100%;
+}
+.text {
+  font-size: 55px;
+  font-weight: 600;
+  color: #3d373a;
+  text-align: left;
+  line-height: 2rem;
+}
+.text2 {
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #3d373ab6;
+}
+.text2 span {
+  border-bottom: #7ca5ff 2px solid;
+  font-weight: 300;
+  line-height: 3rem;
+}
+
+/*  */
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .left {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+.row .right {
+  position: relative;
+  width: 50%;
+}
+.videoDiv2 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+.video2 {
+  width: 100%;
+  height: auto;
+}
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .home {
+    padding: 10px;
+  }
+  .row {
+    flex-direction: column-reverse;
+  }
+  .row .left {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .row .right {
+    position: relative;
+    width: 100%;
+    text-align: justify;
+  }
+  .row .left p {
+    font-size: 2rem;
+
+    text-align: center;
+  }
+  .row .left span {
+    font-size: 2rem;
+    text-align: center;
+  }
+  /* .row .col50 .imgBx {
+    height: 300px;
+    justify-content: center;
+    margin-top: 20px;
+  } */
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .row .left p {
+    font-size: 3rem;
+
+    text-align: center;
+  }
+  .row .left span {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
