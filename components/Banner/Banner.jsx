@@ -4,6 +4,8 @@ import { navData } from "../../data";
 import Typed from "react-typed";
 import Image from "next/image";
 import linkedin from "../../public/assets/linkedin.svg";
+import instagram from "../../public/assets/instagram.svg";
+import github from "../../public/assets/github.svg";
 
 // importing aos
 import AOS from "aos";
@@ -54,7 +56,7 @@ export default function Banner() {
               <li>
                 <button style={{ background: "#FE69B1" }}>
                   {" "}
-                  <Image width={30} height={30} src={linkedin} />
+                  <Image width={30} height={30} src={instagram} />
                 </button>
               </li>
               <li>
@@ -66,7 +68,7 @@ export default function Banner() {
               <li>
                 <button style={{ background: "#6BA3E5" }}>
                   {" "}
-                  <Image width={30} height={30} src={linkedin} />
+                  <Image width={30} height={30} src={github} />
                 </button>
               </li>
             </ul>

@@ -64,7 +64,9 @@ export default function Header() {
                 </li>
               );
             })}
-            <button className={styles.header_navbar_li_button}>Contact</button>
+            <Link href='#contact' className={styles.header_navbar_li_button}>
+              Contact
+            </Link>
           </ul>
         </nav>
       </header>

@@ -8,7 +8,7 @@
 }
 .contact h3,
 .contact p {
-  color: #fff;
+  color: #7ca5ff;
 }
 .contactForm {
   position: relative;
@@ -64,7 +64,7 @@
   position: relative;
   border: none;
   border-bottom: 1px solid #7ca5ff;
-  color: #d2e2f1;
+  color: #7ca5ff;
   background: transparent;
   width: 100%;
   padding: 10px 0;

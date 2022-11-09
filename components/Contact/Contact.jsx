@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./Contact.module.css";
 import Image from "next/image";
 import { toast } from "react-toastify";
 import cloud from "../../public/assets/cloud.png";
 import sun from "../../public/assets/sun.png";
+import emailjs from "@emailjs/browser";
 
 // importing aos
 import AOS from "aos";
@@ -18,9 +19,46 @@ import "aos/dist/aos.css";
 //   }
 
 export default function Contact() {
+  const [loading, setLoading] = useState(false);
+
+  const form = useRef();
+
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    const loader = toast.loading("Veuillez patienter...");
+    emailjs
+      .sendForm(
+        "service_gmf8g07",
+        "template_hk6cecm",
+        form.current,
+        "2lN5J7TEq8PM4hPM4"
+      )
+      .then(
+        (result) => {
+          // SUCCESS console.log(result.text);
+          toast.update(loader, {
+            render: "Message envoyé avec succès !",
+            type: "success",
+            autoClose: 3000,
+            isLoading: false,
+          });
+        },
+        (error) => {
+          // ERROR console.log(error.text);
+          toast.update(loader, {
+            render: "Une erreur est survenue !",
+            type: "error",
+            autoClose: 3000,
+            isLoading: false,
+          });
+        }
+      );
+    e.target.reset();
+  };
 
   return (
     <div className={styles.wrapper}>
@@ -36,7 +74,7 @@ export default function Contact() {
               height={300}
               src={cloud}
             />
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className={styles.row100}>
                 <div className={styles.inputBx50}>
                   <input type='text' name='lastname' placeholder='Last Name' />
@@ -56,6 +94,11 @@ export default function Contact() {
                     name='email'
                     placeholder='Email Address'
                   />
+                </div>
+              </div>
+              <div className={styles.row100}>
+                <div className={styles.inputBx100}>
+                  <input type='tel' name='phone' placeholder='Phone Number' />
                 </div>
               </div>
               <div className={styles.row100}>
