@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import styles from "./Banner.module.css";
 import { navData } from "../../data";
 import Typed from "react-typed";
+import Image from "next/image";
+import linkedin from "../../public/assets/linkedin.svg";
 
 // importing aos
 import AOS from "aos";
@@ -48,6 +50,26 @@ export default function Banner() {
                 loop
               />
             </div>
+            <ul className={styles.flex}>
+              <li>
+                <button style={{ background: "#FE69B1" }}>
+                  {" "}
+                  <Image width={30} height={30} src={linkedin} />
+                </button>
+              </li>
+              <li>
+                <button style={{ background: "#51C8B7" }}>
+                  {" "}
+                  <Image width={30} height={30} src={linkedin} />
+                </button>
+              </li>
+              <li>
+                <button style={{ background: "#6BA3E5" }}>
+                  {" "}
+                  <Image width={30} height={30} src={linkedin} />
+                </button>
+              </li>
+            </ul>
           </div>
           {/* BANNER - RIGHT */}
           <div className={styles.right}>

@@ -16,7 +16,7 @@
 export const navData = {
   items: [
     { href: "#home", name: "Home" },
-    { href: "#services", name: "Projects" },
+    { href: "#projects", name: "Projects" },
     { href: "#about", name: "About" },
   ],
 };

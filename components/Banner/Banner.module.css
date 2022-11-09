@@ -96,7 +96,23 @@
   align-items: center;
   flex-direction: column;
 }
-
+.flex {
+  display: flex;
+  /* justify-content: space-around; */
+}
+.flex li {
+  display: flex;
+  list-style: none;
+  margin: 15px;
+}
+.flex li button {
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+}
 /* Responsive */
 @media (max-width: 991px) {
   .home {
