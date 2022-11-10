@@ -17,7 +17,7 @@ export default function Home() {
 
       <Header />
       <Banner />
-      {/* <Projects /> */}
+      <Projects />
       <Contact />
     </div>
   );

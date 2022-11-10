@@ -55,3 +55,14 @@
   border-radius: 30px;
   background-color: transparent;
 }
+.navBtn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    margin-bottom: 200px;
+  }
+}

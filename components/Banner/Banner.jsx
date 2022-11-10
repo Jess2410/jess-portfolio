@@ -36,7 +36,8 @@ export default function Banner() {
                 <p className={styles.text2}>
                   I am passionate about <span>UI/UX Design</span> and
                   <br></br>
-                  <span>Front End</span> Development.
+                  <span>Front End</span> Development based<br></br>
+                  in <span> Marseille</span> (France).
                 </p>
               </p>
             </div>

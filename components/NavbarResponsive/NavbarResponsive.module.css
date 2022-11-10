@@ -1,0 +1,23 @@
+.NavbarResponsive {
+  background-color: #7ca5ff;
+  display: flex;
+  /* height: 500px; */
+  margin-top: 50vh;
+  flex-direction: column;
+  position: fixed;
+  z-index: 1000;
+  right: 0;
+  /* width: 50%; */
+}
+.NavbarResponsive li {
+  list-style: none;
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: center;
+  color: white;
+}
+@media (min-width: 900px) {
+  .NavbarResponsive {
+    display: none;
+  }
+}

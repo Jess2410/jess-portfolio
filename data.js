@@ -17,7 +17,7 @@ export const navData = {
   items: [
     { href: "#home", name: "Home" },
     { href: "#projects", name: "Projects" },
-    { href: "#about", name: "About" },
+    { href: "#skills", name: "Skills" },
   ],
 };
 
@@ -41,5 +41,19 @@ export const projectsData = {
     { href: "#", name: "Chapito", img: "" },
     { href: "#", name: "AlgoNet", img: "" },
     { href: "#", name: "Bella Bionda", img: "" },
+  ],
+};
+export const skillsData = {
+  skills: [
+    { name: "HTML/CSS", img: "" },
+    { name: "Javascript", img: "" },
+    { name: "React Js", img: "" },
+    { name: "Next Js", img: "" },
+    { name: "Figma", img: "" },
+    { name: "Procreate", img: "" },
+    { name: "Design", img: "" },
+    { name: "Logos", img: "" },
+    { name: "UX/UI", img: "" },
+    { name: "Illustrations", img: "" },
   ],
 };

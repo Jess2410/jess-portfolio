@@ -10,14 +10,6 @@ import emailjs from "@emailjs/browser";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// const initMessage = {
-//     lastname: "",
-//     firstname: "",
-//     email : "",
-//     message : "",
-//     read: false,
-//   }
-
 export default function Contact() {
   const [loading, setLoading] = useState(false);
 

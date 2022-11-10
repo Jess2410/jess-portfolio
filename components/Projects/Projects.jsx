@@ -6,15 +6,24 @@ import styles from "./Projects.module.css";
 function Projects() {
   const { projects } = projectsData;
   return (
-    <div id='projects'>
-      {projects.map((item, i) => {
-        return (
-          <div key={i} className={styles.wrapper}>
-            <Image width={200} height={100} src='/assets/win1.png' />
-          </div>
-        );
-      })}
-    </div>
+    <section id='projects' className={styles.projects}>
+      <h1>Projects</h1>
+      <div className={styles.grid}>
+        {projects.map((item, i) => {
+          return (
+            <div key={i} className={styles.gridItem}>
+              <Image
+                width={500}
+                height={250}
+                layout='responsive'
+                src='/assets/win1.png'
+              />
+              <h2>{item.name}</h2>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }
 
