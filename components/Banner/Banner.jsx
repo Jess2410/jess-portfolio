@@ -33,12 +33,12 @@ export default function Banner() {
               <p>
                 Hi, I&rsquo;m Jess !
                 <br />
-                <p className={styles.text2}>
-                  I am passionate about <span>UI/UX Design</span> and
-                  <br></br>
-                  <span>Front End</span> Development based<br></br>
-                  in <span> Marseille</span> (France).
-                </p>
+              </p>
+              <p className={styles.text2}>
+                I am passionate about <span>UI/UX Design</span> and
+                <br></br>
+                <span>Front End</span> Development based<br></br>
+                in <span> Marseille</span> (France).
               </p>
             </div>
             <div className={styles.typed}>
@@ -55,22 +55,34 @@ export default function Banner() {
             </div>
             <ul className={styles.flex}>
               <li>
-                <button style={{ background: "#FE69B1" }}>
+                <Link
+                  href='https://www.instagram.com/art.jess2410/'
+                  target='blank'
+                  style={{ background: "#FE69B1" }}
+                >
                   {" "}
-                  <Image width={30} height={30} src={instagram} />
-                </button>
+                  <Image width={30} height={30} src={instagram} alt='icon' />
+                </Link>
               </li>
               <li>
-                <button style={{ background: "#51C8B7" }}>
+                <Link
+                  href='https://www.linkedin.com/in/jessica-tounkara/'
+                  target='blank'
+                  style={{ background: "#51C8B7" }}
+                >
                   {" "}
-                  <Image width={30} height={30} src={linkedin} />
-                </button>
+                  <Image width={30} height={30} src={linkedin} alt='icon' />
+                </Link>
               </li>
               <li>
-                <button style={{ background: "#6BA3E5" }}>
+                <Link
+                  href='https://github.com/Jess2410'
+                  target='blank'
+                  style={{ background: "#6BA3E5" }}
+                >
                   {" "}
-                  <Image width={30} height={30} src={github} />
-                </button>
+                  <Image width={30} height={30} src={github} alt='icon' />
+                </Link>
               </li>
             </ul>
           </div>

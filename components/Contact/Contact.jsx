@@ -65,6 +65,7 @@ export default function Contact() {
               width={300}
               height={300}
               src={cloud}
+              alt='cloud'
             />
             <form ref={form} onSubmit={sendEmail}>
               <div className={styles.row100}>
@@ -107,6 +108,7 @@ export default function Contact() {
                     width={250}
                     height={250}
                     src={sun}
+                    alt='sun'
                   />
                   <button className={styles.button} type='submit'>
                     Send
