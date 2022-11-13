@@ -1,18 +1,3 @@
-// import images
-
-// import serviceIcon from "../stepadvise/public/assets/serviceIcon.png"
-
-// import projet1 from "./public/assets/projet1.jpg";
-// import projet2 from "../stepadvise-website/public/assets/projet2.jpg";
-// import projet3 from "../stepadvise-website/public/assets/projet3.jpg";
-// import projet4 from "../stepadvise-website/public/assets/projet4.jpg";
-// import projet5 from "../stepadvise-website/public/assets/projet5.jpg";
-// import projet6 from "../stepadvise-website/public/assets/projet6.jpg";
-// import tlpe from "../stepadvise-website/public/assets/tlpe.png";
-// import pe from "../stepadvise-website/public/assets/pe.png";
-// import law from "../stepadvise-website/public/assets/law.png";
-// import amo from "../stepadvise-website/public/assets/amo.png";
-
 export const navData = {
   items: [
     { href: "#home", name: "Home" },
@@ -31,29 +16,26 @@ export const servicesData = {
 };
 export const projectsData = {
   projects: [
-    { href: "#", name: "StepAdvise", img: "" },
-    { href: "#", name: "RestoFood", img: "", img: "" },
-    { href: "#", name: "React Chat" },
-    { href: "#", name: "Art Of Jess", img: "" },
-    { href: "#", name: "Pet Store", img: "" },
-    { href: "#", name: "Drive In Green", img: "" },
-    { href: "#", name: "Heroes", img: "" },
-    { href: "#", name: "Chapito", img: "" },
-    { href: "#", name: "AlgoNet", img: "" },
-    { href: "#", name: "Bella Bionda", img: "" },
+    { href: "#", name: "StepAdvise", img: "/assets/stepadvise.jpg" },
+    { href: "#", name: "RestoFood", img: "/assets/resto.jpg" },
+    { href: "#", name: "React Chat", img: "/assets/reactchat.jpeg" },
+    { href: "#", name: "Art Of Jess", img: "/assets/artjess.jpg" },
+    { href: "#", name: "Pet Store", img: "/assets/petshop.jpeg" },
+    { href: "#", name: "Drive In Green", img: "/assets/drive.jpg" },
+    { href: "#", name: "Brand", img: "/assets/brand.jpg" },
+    { href: "#", name: "Chapito", img: "/assets/chapito.jpeg" },
+    { href: "#", name: "Amazona", img: "/assets/amazona.jpg" },
   ],
 };
 export const skillsData = {
   skills: [
-    { name: "HTML/CSS", img: "" },
-    { name: "Javascript", img: "" },
-    { name: "React Js", img: "" },
-    { name: "Next Js", img: "" },
-    { name: "Figma", img: "" },
-    { name: "Procreate", img: "" },
-    { name: "Design", img: "" },
-    { name: "Logos", img: "" },
-    { name: "UX/UI", img: "" },
-    { name: "Illustrations", img: "" },
+    { name: "HTML/CSS", img: "/assets/html.png" },
+    { name: "Javascript", img: "/assets/js.png" },
+    { name: "React Js", img: "/assets/react.png" },
+    { name: "Next Js", img: "/assets/next.jpg" },
+    { name: "Figma", img: "/assets/figma.png" },
+    { name: "Procreate", img: "/assets/procreate.jpg" },
+    { name: "Design & Logos", img: "/assets/design.png" },
+    { name: "UX/UI", img: "/assets/uxui.png" },
   ],
 };

@@ -24,13 +24,20 @@ function Project({ item, key }) {
           <h2>{item.name}</h2>
         </>
       ) : (
-        <Image
-          width={500}
-          height={250}
-          layout='responsive'
-          src='/assets/menu.svg'
-          alt={item.name}
-        />
+        <>
+          <Image
+            width={700}
+            height={550}
+            // layout='fill'
+            layout='responsive'
+            src={item.img}
+            alt={item.name}
+            className={styles.radius}
+            objectFit='contain'
+            // sizes='100vw'
+          />
+          <h2>{item.name}</h2>
+        </>
       )}
     </div>
   );

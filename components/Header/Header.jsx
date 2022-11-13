@@ -81,12 +81,12 @@ export default function Header() {
                 <Image height={30} width={30} src={menu} alt='icon' />
               </button>
             )}
+            {showNavbarResponsive && <NavbarResponsive />}
             {checkWidth > 1200 ? (
               <Link href='#contact' className={styles.header_navbar_li_button}>
                 Contact
               </Link>
             ) : null}
-            {showNavbarResponsive && <NavbarResponsive />}
           </ul>
         </nav>
       </header>
