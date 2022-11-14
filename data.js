@@ -35,7 +35,7 @@ export const skillsData = {
     { name: "Next Js", img: "/assets/next.jpg" },
     { name: "Figma", img: "/assets/figma.png" },
     { name: "Procreate", img: "/assets/procreate.jpg" },
-    { name: "Design & Logos", img: "/assets/design.png" },
+    { name: "Design & Logos", img: "/assets/designLogo.png" },
     { name: "UX/UI", img: "/assets/uxui.png" },
   ],
 };
