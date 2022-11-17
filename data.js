@@ -16,7 +16,12 @@ export const servicesData = {
 };
 export const projectsData = {
   projects: [
-    { href: "#", name: "StepAdvise", img: "/assets/stepadvise.jpg" },
+    {
+      href: "www.stepadvise.fr",
+      name: "StepAdvise",
+      img: "/assets/stepadvise.jpg",
+      description: "Il s&rsquo;agit d&rsquo;une description",
+    },
     { href: "#", name: "RestoFood", img: "/assets/resto.jpg" },
     { href: "#", name: "React Chat", img: "/assets/reactchat.jpeg" },
     { href: "#", name: "Art Of Jess", img: "/assets/artjess.jpg" },

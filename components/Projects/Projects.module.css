@@ -57,6 +57,17 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
+
+.projectModal {
+  width: 60%;
+  height: 70%;
+  background-color: white;
+  position: fixed;
+  top: 15%;
+  left: 20%;
+  z-index: 900;
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale3d(1, 1, 1);

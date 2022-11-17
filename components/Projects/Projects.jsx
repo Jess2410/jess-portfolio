@@ -1,25 +1,24 @@
-import React, { useState } from "react";
 import { projectsData } from "../../data";
-import Image from "next/image";
 import styles from "./Projects.module.css";
 import Project from "./Project";
 
-function Projects() {
+function Projects({ setProjectSelected, setShowModalProject }) {
   const { projects } = projectsData;
 
-  // const [hover, setHover] = useState(false);
-
+  const onSelectProject = (project) => {
+    setProjectSelected(project);
+    setShowModalProject(true);
+  };
   return (
     <section id='projects' className={styles.projects}>
       <h1>Projects</h1>
       <div className={styles.grid}>
-        {projects.map((item, key) => {
+        {projects.map((projet, key) => {
           return (
             <Project
               key={key}
-              item={item}
-              // onMouseEnter={() => setHover(true)}
-              // onMouseLeave={() => setHover(false)}
+              projet={projet}
+              onSelectProject={() => onSelectProject(projet)}
             />
           );
         })}

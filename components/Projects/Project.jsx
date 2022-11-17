@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import styles from "./Projects.module.css";
 import Image from "next/image";
 
-function Project({ item, key }) {
+function Project({ projet, onSelectProject }) {
   const [hover, setHover] = useState(false);
   return (
     <div
-      key={key}
       className={styles.gridItem}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      onClick={onSelectProject}
     >
       {!hover ? (
         <>
@@ -18,10 +18,10 @@ function Project({ item, key }) {
             height={250}
             layout='responsive'
             src='/assets/win1.png'
-            alt={item.name}
+            alt={projet.name}
           />
 
-          <h2>{item.name}</h2>
+          <h2>{projet.name}</h2>
         </>
       ) : (
         <>
@@ -30,13 +30,13 @@ function Project({ item, key }) {
             height={550}
             // layout='fill'
             layout='responsive'
-            src={item.img}
-            alt={item.name}
+            src={projet.img}
+            alt={projet.name}
             className={styles.radius}
             objectFit='contain'
             // sizes='100vw'
           />
-          <h2>{item.name}</h2>
+          <h2>{projet.name}</h2>
         </>
       )}
     </div>
