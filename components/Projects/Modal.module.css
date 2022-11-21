@@ -16,27 +16,22 @@
   background-color: white;
   border-radius: 8px;
   box-sizing: 1px 1px 20px rgba(0, 0, 0, 0.26);
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem;
+  /* justify-content: center; */
+  align-items: space-between;
+  padding: 1rem;
   margin: auto;
   overflow-y: auto;
-}
-.modalContent {
-  width: 100%;
   display: flex;
-  flex-direction: column;
+  position: relative;
+  /* z-index: 600; */
 }
-.modalBtnContent {
-  display: flex;
-  justify-content: flex-end;
-}
-.modalRow {
-  display: flex;
-  justify-content: space-between;
-}
-.modalBtn {
-  right: 0;
+
+.modal .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  /* z-index: 10000;
+  overflow: hidden; */
   justify-content: flex-end;
   width: fit-content;
   border-style: none;
@@ -49,41 +44,72 @@
   margin: 0.5rem;
 }
 
-.modalP {
-  font-size: 1.1rem;
-  margin: 0.5rem;
-}
-
-.modalText {
-  font-size: 1.2rem;
-  margin: 30px 40px;
-  text-align: justify;
-  letter-spacing: 1.5px;
-}
-
-.rowLeftCenter {
+.modalContent {
+  width: 100%;
   display: flex;
-  justify-content: Left;
-  align-items: center;
+  flex-direction: column;
 }
-.modalList {
-  width: 70%;
-  margin: auto;
+.textContent {
+  /* margin: auto; */
+  text-align: left;
+}
+.textContent h2 {
   text-align: center;
+  letter-spacing: 1px;
 }
-.info {
+.textContent p {
+  flex: 1;
+}
+
+.modalBtn {
   right: 0;
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 600;
+  justify-content: flex-end;
+  width: fit-content;
+  border-style: none;
+  background-color: transparent;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  background-color: #d3e1f1;
 }
-.link {
-  color: #0070f3;
-  text-decoration: underline;
-}
-.list_container {
-  height: fit-content;
+
+.btnContent {
   margin: auto;
-  border-radius: 10px;
-  border: #0070f3 1px solid;
+}
+
+.center {
+  background: #fff;
+  color: #000;
+  max-width: 100px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  cursor: pointer;
+  display: block;
+  margin: 15px auto;
+  padding: 5px 15px;
+}
+.box button:hover {
+  background: #da727b;
+  color: #fff;
+}
+.textContent {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  background-color: #ffffff;
+  min-height: 100%;
+  min-width: 30%;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1200px) {
+  .modal {
+    flex-direction: column;
+  }
 }
