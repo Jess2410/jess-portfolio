@@ -1,35 +1,7 @@
 .home {
   min-height: auto;
-  padding: 100px;
+  padding: 80px;
 }
-
-/* .banner {
-  display: flex;
-  height: 100vh;
-  width: 100vw;
-  flex-direction: row;
-  position: relative;
-} */
-/* .left {
-  padding-left: 80px;
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  display: flex;
-  justify-content: center;
-  z-index: 15;
-}
-
-.right {
-  width: 70%;
-  position: relative;
-  z-index: 10;
-}
-.rightV {
-  position: absolute;
-  width: 100%;
-  object-fit: cover;
-} */
 
 .typed span {
   font-size: 45px;

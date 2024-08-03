@@ -22,7 +22,7 @@ function Skill({ item, key }) {
         />
       </div>
 
-      <h2>{item.name}</h2>
+      <h2>{item.name && item.name}</h2>
     </div>
   );
 }

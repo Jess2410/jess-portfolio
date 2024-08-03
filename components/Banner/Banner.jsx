@@ -37,7 +37,7 @@ export default function Banner() {
               <p className={styles.text2}>
                 I am passionate about <span>UI/UX Design</span> and
                 <br></br>
-                <span>Front End</span> Development based<br></br>
+                <span>FullStack</span> Development based<br></br>
                 in <span> Marseille</span> (France).
               </p>
             </div>
@@ -45,8 +45,7 @@ export default function Banner() {
               <Typed
                 strings={[
                   "Web Developement",
-                  "UX/UI Designer",
-                  "Logos",
+                  "UX/UI - Design",
                   "Digital Illustrations",
                 ]}
                 typeSpeed={40}
