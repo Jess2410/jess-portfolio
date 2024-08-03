@@ -157,17 +157,16 @@ export const skillsData = {
   ],
 };
 
-export const paintingsData = {
-  paintings: [
+export const paintsData = {
+  paints: [
     { img: "/assets/meg.jpg" },
     { img: "/assets/witch.jpg" },
-    { img: "/assets/react.png" },
-    { img: "/assets/next.jpg" },
-    { img: "/assets/canva.jpg" },
-    { img: "/assets/laravel.jpg" },
-    { img: "/assets/materialui.png" },
-    { img: "/assets/figma.png" },
-    { img: "/assets/procreate.jpg" },
-    { img: "/assets/designer.png" },
+    { img: "/assets/luffy.png" },
+    { img: "/assets/ariel.png" },
+    { img: "/assets/cops.png" },
+    { img: "/assets/purple.png" },
+    { img: "/assets/sist.png" },
+    { img: "/assets/blue.png" },
+    { img: "/assets/cherry.png" },
   ],
 };

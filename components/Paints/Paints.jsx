@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 // import { projectsData } from "../../data";
 import Image from "next/image";
-import styles from "./Skills.module.css";
-import Skill from "./Skill";
-import { paintingsData, skillsData } from "../../data";
-import Paint from "./Skill";
+import styles from "./Paints.module.css";
+import Skill from "./Paint";
+import { paintsData, skillsData } from "../../data";
+import Paint from "./Paint";
 
-function Skills() {
-  const { skills } = skillsData;
+function Paints() {
+  const { paints } = paintsData;
 
   // const [hover, setHover] = useState(false);
 
   return (
     <>
       <section id='paintings' className={styles.projects}>
-        <h1>Skills</h1>
+        <h1>Paints</h1>
         <div className={styles.grid}>
-          {skills.map((item, key) => {
+          {paints.map((item, key) => {
             return <Paint key={key} item={item} />;
           })}
         </div>
@@ -25,4 +25,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default Paints;

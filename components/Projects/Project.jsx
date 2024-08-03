@@ -11,7 +11,7 @@ function Project({ projet, onSelectProject }) {
       onMouseLeave={() => setHover(false)}
       onClick={onSelectProject}
     >
-      {!hover ? (
+      {/* {!hover ? (
         <>
           <Image
             width={500}
@@ -23,22 +23,22 @@ function Project({ projet, onSelectProject }) {
 
           <h2>{projet.name}</h2>
         </>
-      ) : (
-        <>
-          <Image
-            width={700}
-            height={550}
-            // layout='fill'
-            layout='responsive'
-            src={projet.img}
-            alt={projet.name}
-            className={styles.radius}
-            objectFit='contain'
-            // sizes='100vw'
-          />
-          <h2>{projet.name}</h2>
-        </>
-      )}
+      ) : ( */}
+      <>
+        <Image
+          width={150}
+          height={150}
+          // layout='fill'
+          layout='responsive'
+          src={projet.img}
+          alt={projet.name}
+          className={styles.radius}
+          // objectFit='contain'
+          // sizes='100vw'
+        />
+        <h2>{projet.name}</h2>
+      </>
+      {/* )} */}
     </div>
   );
 }
