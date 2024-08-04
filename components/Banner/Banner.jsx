@@ -50,7 +50,7 @@ export default function Banner() {
             <div className={styles.typed}>
               <Typed
                 strings={[
-                  "Web Developement",
+                  "Web Development",
                   "UX/UI - Design",
                   "Digital Illustrations",
                 ]}
