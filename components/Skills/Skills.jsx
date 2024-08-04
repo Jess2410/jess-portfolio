@@ -13,7 +13,7 @@ function Skills() {
 
   return (
     <>
-      <section id='paintings' className={styles.projects}>
+      <section id='skills' className={styles.projects}>
         <h1>Skills</h1>
         <div className={styles.grid}>
           {skills.map((item, key) => {

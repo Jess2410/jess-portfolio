@@ -7,41 +7,32 @@
   left: 0;
   z-index: 500;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal {
-  height: auto;
-  max-height: 80%;
-  max-width: 90%;
+  max-height: 80vh;
+  width: 50%;
   background-color: white;
   border-radius: 8px;
-  box-sizing: 1px 1px 20px rgba(0, 0, 0, 0.26);
-  /* justify-content: center; */
-  align-items: space-between;
-  padding: 1rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.26);
+  padding: 30px;
   margin: auto;
   overflow-y: auto;
-  display: flex;
   position: relative;
-  /* z-index: 600; */
 }
 
 .modal .close {
   position: absolute;
   right: 10px;
   top: 10px;
-  /* z-index: 10000;
-  overflow: hidden; */
-  justify-content: flex-end;
-  width: fit-content;
   border-style: none;
-  background-color: transparent;
+  background-color: #b6b1f2;
   border: none;
   padding: 0.5rem;
-  border-radius: 8px;
-  font-size: 1.2rem;
+  border-radius: 50%;
   cursor: pointer;
-  margin: 0.5rem;
 }
 
 .modalContent {
@@ -49,14 +40,17 @@
   display: flex;
   flex-direction: column;
 }
+
 .textContent {
-  /* margin: auto; */
-  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
+
 .textContent h2 {
   text-align: center;
   letter-spacing: 1px;
 }
+
 .textContent p {
   flex: 1;
 }
@@ -72,7 +66,7 @@
   border-radius: 8px;
   font-size: 1.2rem;
   cursor: pointer;
-  margin: 0.5rem;
+  margin: 2rem;
   background-color: #d3e1f1;
 }
 
@@ -92,24 +86,10 @@
   margin: 15px auto;
   padding: 5px 15px;
 }
-.box button:hover {
-  background: #da727b;
-  color: #fff;
-}
-.textContent {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: space-between;
-  background-color: #ffffff;
-  min-height: 100%;
-  min-width: 30%;
-}
 
-/* responsive */
-
+/* Responsive Styles */
 @media screen and (max-width: 1200px) {
   .modal {
-    flex-direction: column;
+    width: 80%;
   }
 }

@@ -1,23 +1,42 @@
 .projects h1 {
-  text-align: center;
+  /* text-align: center; */
+  padding: 0;
   font-size: 2rem;
-  border-bottom: #a3c1e7 5px solid;
-  width: fit-content;
-  margin: 14% auto 6%;
+  border-radius: 10px;
+  text-align: center;
+  /* margin: auto; */
+  color: #b6b1f2;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
 }
 
+.projects h1::before {
+  content: "";
+  display: inline-block;
+  width: 70px;
+  height: 90px;
+  background-image: url("/assets/projects.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  vertical-align: middle;
+}
 .projects {
-  margin: 2% auto;
+  margin: 8% auto;
+  background: linear-gradient(to top, #b6b1f2, #ffffff);
 }
 
 .grid {
   display: flex;
   flex-wrap: wrap;
+  padding: 0 12.5vw 100px;
 }
 .gridItem {
-  grid-gap: 30px;
-  width: 350px;
-  height: 250px;
+  grid-gap: 4cap;
+  width: 450px;
+  height: 350px;
   /* border: 1px solid black; */
   border-radius: 50px;
   margin-top: 30px;
@@ -25,7 +44,9 @@
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 20px auto;
+  background-color: white;
+  padding: 24px;
 }
 
 .gridItem h2 {
@@ -63,6 +84,8 @@
   top: 15%;
   left: 20%;
   z-index: 900;
+  display: flex;
+  flex-direction: column;
 } */
 
 @-webkit-keyframes pulse {

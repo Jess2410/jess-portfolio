@@ -2,23 +2,19 @@ import React, { useEffect, useRef, useState } from "react";
 import styles from "./Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
-import menu from "../../public/assets/menu.svg";
 import close from "../../public/assets/close.svg";
 import NavbarResponsive from "../NavbarResponsive/NavbarResponsive";
-
+import portfolio from "../../public/assets/portfolio3.png";
+import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { navData } from "../../data";
 
-// import navData
-// import { navData } from "../../data";
-// import NavbarResponsive from "../NavbarResponsive/NavbarResponsive";
-
 export default function Header() {
   const { items } = navData;
 
-  // const [isNavExpanded, setIsNavExpanded] = useState(false);
   const [checkWidth, setcheckWidth] = useState(null);
   const [toggleNav, setToggleNav] = useState(false);
   const [showNavbarResponsive, setShowNavbarResponsive] = useState(false);
@@ -51,14 +47,17 @@ export default function Header() {
       {/* HEADER */}
       <header id='header' className={styles.header}>
         <a className={styles.logo} href='#'>
-          J<span>ESS</span>
+          <Image
+            width={50}
+            height={50}
+            layout='responsive'
+            src={portfolio}
+            alt='portfolio'
+            className={styles.logo}
+          />
         </a>
         <nav>
-          <ul
-            className={styles.header_navbar}
-            data-aos='fade-right'
-            data-aos-duration='3000'
-          >
+          <ul className={styles.header_navbar}>
             {checkWidth > 1200 ? (
               items.map((item, i) => {
                 return (
@@ -78,10 +77,40 @@ export default function Header() {
               </button>
             ) : (
               <button onClick={showNavbar} className={styles.navBtn}>
-                <Image height={30} width={30} src={menu} alt='icon' />
+                <MenuRoundedIcon style={{ color: "#b6b1f2" }} />
               </button>
             )}
-            {showNavbarResponsive && <NavbarResponsive />}
+            {showNavbarResponsive && (
+              <div className={styles.NavbarResponsive}>
+                <div>
+                  <button onClick={showNavbar} className={styles.navRespBtn}>
+                    <CloseRoundedIcon />
+                  </button>
+                </div>
+                {items.map((item, i) => {
+                  return (
+                    <li id='li' key={i} className={styles.header_navbarResp_li}>
+                      <Link
+                        href={item.href}
+                        onClick={showNavbar}
+                        className={styles.header_navbarResp_li_a}
+                      >
+                        {item.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+                <li id='li' className={styles.header_navbarResp_li}>
+                  <Link
+                    href='#contact'
+                    onClick={showNavbar}
+                    className={styles.header_navbarResp_li_a}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </div>
+            )}
             {checkWidth > 1200 ? (
               <Link href='#contact' className={styles.header_navbar_li_button}>
                 Contact

@@ -6,8 +6,7 @@ import Image from "next/image";
 import linkedin from "../../public/assets/linkedin.svg";
 import instagram from "../../public/assets/instagram.svg";
 import github from "../../public/assets/github.svg";
-
-// importing aos
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos"; // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -17,6 +16,13 @@ import Link from "next/link";
 
 export default function Banner() {
   const { services } = servicesData;
+
+  const scrollToSection = (id) => {
+    const element = document.querySelector(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     AOS.init();
@@ -31,14 +37,14 @@ export default function Banner() {
           <div className={styles.left}>
             <div className={styles.text}>
               <p>
-                Hi, I&rsquo;m Jess !
+                Hi, I&rsquo;m Jessica !
                 <br />
               </p>
               <p className={styles.text2}>
-                I am passionate about <span>UI/UX Design</span> and
+                I am passionate about <span>UI/UX design</span> and
                 <br></br>
-                <span>FullStack</span> Development based<br></br>
-                in <span> Marseille</span> (France).
+                <span>full-stack development</span>, based<br></br>
+                in <span> Marseille</span>, France.
               </p>
             </div>
             <div className={styles.typed}>
@@ -55,11 +61,11 @@ export default function Banner() {
             <ul className={styles.flex}>
               <li>
                 <Link
+                  className={styles.flexlink}
                   href='https://www.instagram.com/art.jess2410/'
                   target='blank'
                   style={{ background: "#FE69B1" }}
                 >
-                  {" "}
                   <Image width={30} height={30} src={instagram} alt='icon' />
                 </Link>
               </li>
@@ -67,9 +73,9 @@ export default function Banner() {
                 <Link
                   href='https://www.linkedin.com/in/jessica-tounkara/'
                   target='blank'
+                  className={styles.flexlink}
                   style={{ background: "#51C8B7" }}
                 >
-                  {" "}
                   <Image width={30} height={30} src={linkedin} alt='icon' />
                 </Link>
               </li>
@@ -77,7 +83,8 @@ export default function Banner() {
                 <Link
                   href='https://github.com/Jess2410'
                   target='blank'
-                  style={{ background: "#6BA3E5" }}
+                  className={styles.flexlink}
+                  style={{ background: "#B6B1F2" }}
                 >
                   {" "}
                   <Image width={30} height={30} src={github} alt='icon' />
@@ -101,6 +108,15 @@ export default function Banner() {
           </div>
         </div>
       </div>
+      {/* <Link href='#projects' className={styles.arrow}>
+        <ArrowForwardIosIcon />
+      </Link> */}
+      <button
+        className={styles.arrow}
+        onClick={() => scrollToSection("#projects")}
+      >
+        <ArrowForwardIosIcon />
+      </button>
     </section>
   );
 }

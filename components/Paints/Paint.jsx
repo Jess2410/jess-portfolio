@@ -16,7 +16,7 @@ function Paint({ item, key }) {
           width={550}
           height={550}
           // style={{ justifyContent: "center" }}
-          // layout='responsive'
+          layout='responsive'
           src={item.img}
           alt={item.name}
         />
