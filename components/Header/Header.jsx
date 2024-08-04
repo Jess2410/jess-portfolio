@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import close from "../../public/assets/close.svg";
 import NavbarResponsive from "../NavbarResponsive/NavbarResponsive";
-import portfolio from "../../public/assets/portfolio3.png";
+import portfolio from "../../public/assets/portfolio.png";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import CloseRoundedIcon from "@mui/icons-material/CloseRounded";
 // importing aos
