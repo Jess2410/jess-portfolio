@@ -44,6 +44,7 @@ export const projectsData = {
         "Agile",
         "Strapi",
       ],
+      link: true,
     },
     {
       href: "https://the-aoj-light-5u46-1l3dbb5mp-jess2410s-projects.vercel.app/",
@@ -71,6 +72,7 @@ export const projectsData = {
         "Spring Boot",
         "PostgreSQL",
       ],
+      link: true,
     },
     {
       href: "https://github.com/Jess2410/MyCloud-front",
@@ -92,6 +94,7 @@ export const projectsData = {
         "Laravel",
         "MySQL",
       ],
+      link: true,
     },
     {
       href: "https://github.com/Jess2410/jess-user-management-frontend-new",
@@ -116,6 +119,7 @@ export const projectsData = {
         "Swagger",
         "MySQL",
       ],
+      link: true,
     },
     {
       href: "http://www.stepadvise.fr",
@@ -124,6 +128,7 @@ export const projectsData = {
       description:
         "The company StepAdvise, specialized in urban communication, needed a simple and informative website. I created the site as well as the mockup, and I took real pleasure in designing a site that corresponded to their image.",
       skills: ["Javascript", "Next JS", "Figma", "Agile", "Github", "Vercel"],
+      link: true,
     },
     {
       href: "http://jess2410.github.io/Resto-Food/",
@@ -132,6 +137,7 @@ export const projectsData = {
       description:
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["HTML", "CSS", "Vercel"],
+      link: true,
     },
     {
       href: "#",
@@ -147,6 +153,7 @@ export const projectsData = {
       img: "/assets/brands.png",
       description:
         "This website was created as part of my training in order to improve myself in the field of front-end.",
+      link: true,
     },
     {
       href: "http://github.com/Jess2410/chat-react-firebase",
@@ -155,6 +162,7 @@ export const projectsData = {
       description:
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["React", "Firebase"],
+      link: true,
     },
     {
       href: "http://github.com/Jess2410/artjess-website",
@@ -173,6 +181,7 @@ export const projectsData = {
         "MongoDB",
         "Paypal",
       ],
+      link: true,
     },
     {
       href: "http://github.com/Jess2410/PetStore",
@@ -181,6 +190,7 @@ export const projectsData = {
       description:
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["HTML", "CSS", "Vercel"],
+      link: true,
     },
     {
       href: "http://github.com/Jess2410/driveingreenfinal-prod",
@@ -189,6 +199,7 @@ export const projectsData = {
       description:
         "This is a site made as part of an apprenticeship. Drive In Green is an electric car rental company. We worked in a team of 3 on this project for which I carried out the mock-up and development in Angular.",
       skills: ["Angular", "Laravel", "Figma"],
+      link: true,
     },
     {
       href: "http://jess2410.github.io/Complete-Responsive-Website/",
@@ -197,6 +208,7 @@ export const projectsData = {
       description:
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["HTML", "CSS", "Vercel"],
+      link: true,
     },
     {
       href: "http://github.com/Jess2410/amazona",
@@ -205,6 +217,7 @@ export const projectsData = {
       description:
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["React", "Firebase", "Strapi"],
+      link: true,
     },
   ],
 };

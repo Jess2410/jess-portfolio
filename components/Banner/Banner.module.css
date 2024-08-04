@@ -3,26 +3,25 @@
   display: flex !important;
   align-items: center;
   flex-direction: column;
-  padding: 80px 12.5vw 0;
+  padding: 20px 12.5vw 0;
 }
 
 .typed span {
-  font-size: 45px;
+  font-size: 32px;
   display: inline;
-
   color: #7ca5ff;
   text-align: left;
   width: 100%;
 }
 .text {
-  font-size: 55px;
+  font-size: 40px;
   font-weight: 600;
   color: #3d373a;
   text-align: left;
-  line-height: 2rem;
+  /* line-height: 2rem; */
 }
 .text2 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 300;
   letter-spacing: 2px;
   color: #3d373ab6;
@@ -30,7 +29,7 @@
 .text2 span {
   border-bottom: #7ca5ff 2px solid;
   font-weight: 300;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 /*  */
@@ -88,7 +87,7 @@
   cursor: pointer;
   display: flex;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
   border: none;
   border-radius: 50px;
 }
@@ -151,7 +150,7 @@
     text-align: justify;
   }
   .row .left p {
-    font-size: 2rem;
+    font-size: 1.2rem;
 
     text-align: center;
   }
