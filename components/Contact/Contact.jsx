@@ -22,25 +22,25 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
     const loader = toast.loading("Veuillez patienter...");
+
     emailjs
       .sendForm(
-        "service_gmf8g07",
+        "service_5cf6mho",
         "template_hk6cecm",
         form.current,
         "2lN5J7TEq8PM4hPM4"
       )
       .then(
         (result) => {
-          // SUCCESS console.log(result.text);
           toast.update(loader, {
             render: "Message envoyé avec succès !",
             type: "success",
             autoClose: 3000,
             isLoading: false,
           });
+          form.current.reset(); // Reset form
         },
         (error) => {
-          // ERROR console.log(error.text);
           toast.update(loader, {
             render: "Une erreur est survenue !",
             type: "error",
@@ -48,14 +48,17 @@ export default function Contact() {
             isLoading: false,
           });
         }
-      );
-    e.target.reset();
+      )
+      .finally(() => {
+        setLoading(false); // End loading
+      });
   };
 
   return (
     <div className={styles.wrapper}>
       {/* <div className='line'></div> */}
       <section className={styles.contact} id='contact'>
+        <h1>CONTACT</h1>
         <div className={styles.content}>
           <div className={styles.contactForm}>
             <Image
@@ -110,13 +113,21 @@ export default function Contact() {
                     src={sun}
                     alt='sun'
                   />
-                  <button className={styles.button} type='submit'>
-                    Send
+                  <button
+                    className={styles.button}
+                    type='submit'
+                    disabled={loading}
+                  >
+                    {loading ? "Sending..." : "Send"}
                   </button>
                 </div>
               </div>
             </form>
           </div>
+        </div>
+        <hr />
+        <div className={styles.coordonnees}>
+          <p>Tél : 06 22 01 60 41</p>
         </div>
       </section>
     </div>

@@ -1,9 +1,9 @@
 .home {
-  min-height: 100vh;
-  margin: auto !important;
-  /* padding: 80px; */
+  margin: 10vh auto;
   display: flex !important;
   align-items: center;
+  flex-direction: column;
+  padding: 80px 12.5vw 0;
 }
 
 .typed span {
@@ -73,12 +73,16 @@
 }
 .flex {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-between;
+  width: fit-content;
+  border: border-box;
+  margin-left: 0;
+  padding-left: 0;
 }
 .flex li {
   display: flex;
   list-style: none;
-  margin: 15px;
+  margin-right: 15px;
 }
 .flex li a {
   cursor: pointer;
@@ -89,7 +93,7 @@
   border-radius: 50px;
 }
 
-.flex li a:hover {
+.flexlink:hover {
   -webkit-animation-name: pulse;
   animation-name: pulse;
   -webkit-animation-duration: 1s;
@@ -97,34 +101,35 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
-  }
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-}
+
 @keyframes pulse {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    transform: scale(1.2);
+    opacity: 1;
   }
   50% {
-    -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale(1.3);
+    opacity: 0.7;
   }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    transform: scale(1);
+    opacity: 1;
   }
 }
+
+.arrow {
+  position: absolute;
+  bottom: 10vh;
+  transform: scale3d(2, 2, 1) rotate(90deg);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  transform: scale3d(2.5, 2.5, 1) rotate(90deg) !important;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   .home {
@@ -154,11 +159,12 @@
     font-size: 2rem;
     text-align: center;
   }
-  /* .row .col50 .imgBx {
-    height: 300px;
-    justify-content: center;
-    margin-top: 20px;
-  } */
+  .flex {
+    margin: 1rem auto;
+  }
+  .arrow {
+    display: none;
+  }
 }
 @media screen and (min-width: 800px) and (max-width: 1200px) {
   .row .left p {
@@ -170,7 +176,4 @@
     font-size: 3rem;
     text-align: center;
   }
-  /* .home {
-    top: 5vh;
-  } */
 }

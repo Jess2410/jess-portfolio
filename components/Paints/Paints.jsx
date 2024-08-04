@@ -5,6 +5,7 @@ import styles from "./Paints.module.css";
 import Skill from "./Paint";
 import { paintsData, skillsData } from "../../data";
 import Paint from "./Paint";
+import brush from "../../public/assets/brush.png";
 
 function Paints() {
   const { paints } = paintsData;
@@ -13,7 +14,7 @@ function Paints() {
 
   return (
     <>
-      <section id='paintings' className={styles.projects}>
+      <section id='paints' className={styles.projects}>
         <h1>Paints</h1>
         <div className={styles.grid}>
           {paints.map((item, key) => {

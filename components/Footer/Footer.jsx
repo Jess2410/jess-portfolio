@@ -4,8 +4,8 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <section class={styles.footer}>
-      <p>© {new Date().getFullYear()} - Jess.</p>
+    <section className={styles.footer}>
+      <p>© {new Date().getFullYear()}</p>
     </section>
   );
 }
