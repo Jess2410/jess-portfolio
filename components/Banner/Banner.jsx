@@ -84,7 +84,7 @@ export default function Banner() {
                   href='https://github.com/Jess2410'
                   target='blank'
                   className={styles.flexlink}
-                  style={{ background: "#B6B1F2" }}
+                  style={{ background: "#9f75ff" }}
                 >
                   {" "}
                   <Image width={30} height={30} src={github} alt='icon' />

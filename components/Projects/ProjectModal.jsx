@@ -32,6 +32,7 @@ export const ProjectModal = ({ project, onClose }) => {
             {project.skills &&
               project.skills.map((skill, key) => <li key={key}>{skill}</li>)}
           </ul>
+          <br />
           {project.link && (
             <div className={styles.btnContent}>
               <Link
@@ -40,7 +41,7 @@ export const ProjectModal = ({ project, onClose }) => {
                 href={project?.href}
                 target='_blank'
               >
-                View Website
+                More
               </Link>
             </div>
           )}

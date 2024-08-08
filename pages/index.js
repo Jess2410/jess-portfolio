@@ -23,7 +23,7 @@ export default function Home() {
       ) : null}
       <div className={styles.container}>
         <Head>
-          <title>Jess Portfolio</title>
+          <title>Jessica Portfolio : Dev. et Design</title>
         </Head>
 
         <Header />

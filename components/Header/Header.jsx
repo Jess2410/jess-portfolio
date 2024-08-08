@@ -43,7 +43,7 @@ export default function Header() {
   };
 
   return (
-    <>
+    <div>
       {/* HEADER */}
       <header id='header' className={styles.header}>
         <a className={styles.logo} href='#'>
@@ -77,7 +77,7 @@ export default function Header() {
               </button>
             ) : (
               <button onClick={showNavbar} className={styles.navBtn}>
-                <MenuRoundedIcon style={{ color: "#b6b1f2" }} />
+                <MenuRoundedIcon style={{ color: "#7916ff" }} />
               </button>
             )}
             {showNavbarResponsive && (
@@ -119,6 +119,6 @@ export default function Header() {
           </ul>
         </nav>
       </header>
-    </>
+    </div>
   );
 }

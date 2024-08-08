@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import cloud from "../../public/assets/cloud.png";
 import sun from "../../public/assets/sun.png";
 import emailjs from "@emailjs/browser";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 
 // importing aos
 import AOS from "aos";
@@ -127,7 +128,8 @@ export default function Contact() {
         </div>
         <hr />
         <div className={styles.coordonnees}>
-          <p>Tél : 06 22 01 60 41</p>
+          <LocalPhoneIcon />
+          <p> 06 22 01 60 41</p>
         </div>
       </section>
     </div>

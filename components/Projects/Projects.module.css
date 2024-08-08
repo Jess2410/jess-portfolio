@@ -1,18 +1,19 @@
 .projects h1 {
   /* text-align: center; */
   padding: 0;
+
   font-size: 2rem;
   border-radius: 10px;
   text-align: center;
   /* margin: auto; */
-  color: #b6b1f2;
+  color: #fff;
 
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 30px;
 }
 
-.projects h1::before {
+/* .projects h1::before {
   content: "";
   display: inline-block;
   width: 70px;
@@ -22,10 +23,11 @@
   background-repeat: no-repeat;
   margin-left: 10px;
   vertical-align: middle;
-}
+} */
 .projects {
   margin: 8% auto;
-  background: linear-gradient(to top, #b6b1f2, #ffffff);
+  padding-top: 60px;
+  background: linear-gradient(to bottom, #fe69b1, #ffffff);
 }
 
 .grid {

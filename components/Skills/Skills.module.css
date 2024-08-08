@@ -4,13 +4,19 @@
   border-radius: 10px;
   text-align: center;
   margin: auto;
-  color: #b6b1f2;
-  text-decoration: underline;
+  color: #fff;
+  /* text-decoration: underline; */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.projects h1::before {
+.projects {
+  margin: 8% auto;
+  padding-top: 60px;
+  background: linear-gradient(to bottom, #25a796, #ffffff);
+}
+
+/* .projects h1::before {
   content: "";
   display: inline-block;
   width: 100px;
@@ -20,7 +26,7 @@
   background-repeat: no-repeat;
   margin-left: 10px;
   vertical-align: middle;
-}
+} */
 
 .grid {
   display: grid;

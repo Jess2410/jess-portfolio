@@ -5,6 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: space-between;
+
+  margin: 8% auto 0;
+  padding-top: 60px;
+  background: linear-gradient(to bottom, #1976d2, #ffffff);
 }
 
 .contact h1 {
@@ -13,8 +17,8 @@
   border-radius: 10px;
   text-align: center;
   margin: auto;
-  color: #b6b1f2;
-  text-decoration: underline;
+  color: #fff;
+  /* text-decoration: underline; */
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -106,6 +110,14 @@
 .coordonnees {
   font-size: 24px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1976d2;
+}
+.coordonnees p {
+  margin-left: 5px;
+  color: #1976d2;
 }
 
 /* responsive */

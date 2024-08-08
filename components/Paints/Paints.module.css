@@ -6,11 +6,11 @@
   text-align: center;
   margin: auto;
   color: white;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.projects h1::before {
+/* .projects h1::before {
   content: "";
   display: inline-block;
   width: 100px;
@@ -20,11 +20,11 @@
   background-repeat: no-repeat;
   margin-left: 10px;
   vertical-align: middle;
-}
+} */
 
 .projects {
   padding-top: 60px;
-  background: linear-gradient(to bottom, #b6b1f2, #ffffff);
+  background: linear-gradient(to bottom, #7916ff, #ffffff);
 }
 /* .title {
   display: flex;

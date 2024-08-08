@@ -12,7 +12,7 @@ function Projects({ setProjectSelected, setShowModalProject }) {
   };
   return (
     <section id='projects' className={styles.projects}>
-      <h1>projects.</h1>
+      <h1>projects</h1>
 
       <div className={styles.grid}>
         {projects.map((projet, key) => {

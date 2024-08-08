@@ -3,7 +3,7 @@ export const navData = {
     { href: "#home", name: "Home" },
     { href: "#projects", name: "Projects" },
     { href: "#skills", name: "Skills" },
-    { href: "#paints", name: "Paints" },
+    { href: "#paints", name: "Paintings" },
   ],
 };
 
