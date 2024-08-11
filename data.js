@@ -24,6 +24,7 @@ export const projectsData = {
       description:
         "FRUITHIES is a modern and vibrant branding project for a fictional smoothie company designed to showcase my design skills. The logo was created using AI and image editing in Canva, while the entire project was developed with Figma. The bold color palette, inspired by fresh fruits, includes bright yellows (#FCCE56), rosy reds (#F15763), and lime greens (#8BC743). The marketing materials emphasize the freshness and energy of the smoothies, targeting a young, health-conscious audience.",
       skills: ["IA", "Canva", "Figma"],
+      link: true,
     },
     {
       href: "https://the-aoj-light-5u46-1l3dbb5mp-jess2410s-projects.vercel.app/",
