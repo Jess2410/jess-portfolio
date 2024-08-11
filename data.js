@@ -18,6 +18,14 @@ export const servicesData = {
 export const projectsData = {
   projects: [
     {
+      href: "https://www.figma.com/design/6iUysQ87OVwIfIA1RVPiPz/Fruithies?node-id=0-1&t=X9HOWavzzm44zFlY-1",
+      name: "Fruithies",
+      img: "/assets/fruithies.png",
+      description:
+        "FRUITHIES is a modern and vibrant branding project for a fictional smoothie company designed to showcase my design skills. The logo was created using AI and image editing in Canva, while the entire project was developed with Figma. The bold color palette, inspired by fresh fruits, includes bright yellows (#FCCE56), rosy reds (#F15763), and lime greens (#8BC743). The marketing materials emphasize the freshness and energy of the smoothies, targeting a young, health-conscious audience.",
+      skills: ["IA", "Canva", "Figma"],
+    },
+    {
       href: "https://the-aoj-light-5u46-1l3dbb5mp-jess2410s-projects.vercel.app/",
       name: "Warzone Crossfit",
       img: "/assets/warzone.png",
