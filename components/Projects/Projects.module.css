@@ -201,7 +201,7 @@
   background-color: #555;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
