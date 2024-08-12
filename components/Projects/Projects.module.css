@@ -200,3 +200,15 @@
 .actionButton:hover {
   background-color: #555;
 }
+
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour tablettes */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
