@@ -15,37 +15,62 @@ import { navData } from "../../data";
 export default function Header() {
   const { items } = navData;
 
-  const [checkWidth, setcheckWidth] = useState(null);
+  const [checkWidth, setCheckWidth] = useState(null);
   const [toggleNav, setToggleNav] = useState(false);
   const [showNavbarResponsive, setShowNavbarResponsive] = useState(false);
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  const handleScroll = () => {
+    const scrollThreshold = 100;
+    if (window.scrollY > scrollThreshold) {
+      setIsBlurred(true);
+    } else {
+      setIsBlurred(false);
+    }
+  };
 
   useEffect(() => {
     AOS.init();
   }, []);
 
   const checkWidthFunc = () => {
-    setcheckWidth(window.innerWidth);
+    setCheckWidth(window.innerWidth);
   };
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      setcheckWidth(window.innerWidth);
-      window.addEventListener("resize", checkWidthFunc);
-    }
-    return () => {
-      window.removeEventListener("resize", checkWidthFunc);
-    };
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window !== "undefined") {
+  //     setcheckWidth(window.innerWidth);
+  //     window.addEventListener("resize", checkWidthFunc);
+  //   }
+  //   return () => {
+  //     window.removeEventListener("resize", checkWidthFunc);
+  //   };
+  // }, []);
 
   const showNavbar = () => {
     setToggleNav(!toggleNav);
     setShowNavbarResponsive(!showNavbarResponsive);
   };
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setCheckWidth(window.innerWidth);
+      window.addEventListener("resize", checkWidthFunc);
+      window.addEventListener("scroll", handleScroll);
+    }
+    return () => {
+      window.removeEventListener("resize", checkWidthFunc);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div>
       {/* HEADER */}
-      <header id='header' className={styles.header}>
+      <header
+        id='header'
+        className={`${styles.header} ${isBlurred ? styles.blurred : ""}`}
+      >
         <a className={styles.logo} href='#'>
           <Image
             width={50}

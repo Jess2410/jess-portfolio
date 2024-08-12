@@ -13,7 +13,7 @@ export const ProjectModal = ({ project, onClose }) => {
     <div className={styles.modalBg}>
       <div className={styles.modal}>
         <button className={styles.close} onClick={onClose}>
-          <CloseRoundedIcon />
+          <CloseRoundedIcon style={{ color: "white" }} />
         </button>
         <div className={styles.textContent}>
           <div className={styles.iconBx}>
@@ -34,7 +34,7 @@ export const ProjectModal = ({ project, onClose }) => {
           </ul>
           <br />
           {project.link && (
-            <div className={styles.btnContent}>
+            <div className={styles.modalBtn}>
               <Link
                 className={styles.modalBtn}
                 rel='noopener'

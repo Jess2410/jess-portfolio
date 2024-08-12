@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Projects.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
-function Project({ projet, onSelectProject }) {
+function Project({ project, onSelectProject }) {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -11,34 +12,43 @@ function Project({ projet, onSelectProject }) {
       onMouseLeave={() => setHover(false)}
       onClick={onSelectProject}
     >
-      {/* {!hover ? (
-        <>
-          <Image
-            width={500}
-            height={250}
-            layout='responsive'
-            src='/assets/win1.png'
-            alt={projet.name}
-          />
-
-          <h2>{projet.name}</h2>
-        </>
-      ) : ( */}
-      <>
+      <div className={styles.imageContainer}>
         <Image
           width={150}
-          height={150}
-          // layout='fill'
+          height={250}
           layout='responsive'
-          src={projet.img}
-          alt={projet.name}
+          src={project.img}
+          alt={project.name}
           className={styles.radius}
-          // objectFit='contain'
-          // sizes='100vw'
         />
-        <h2>{projet.name}</h2>
-      </>
-      {/* )} */}
+        {hover && (
+          <div className={styles.hoverActions}>
+            <button
+              className={styles.actionButton}
+              style={{ border: "#9F75FF 1px solid" }}
+              onClick={onSelectProject}
+            >
+              Details
+            </button>
+            <a
+              className={styles.modalBtn}
+              rel='noopener noreferrer'
+              href={project?.href}
+              target='_blank'
+            >
+              {project.link && (
+                <button
+                  className={styles.actionButton}
+                  style={{ background: "white", color: "#323d55" }}
+                >
+                  Discover
+                </button>
+              )}
+            </a>
+          </div>
+        )}
+      </div>
+      <h2 className={styles.title}>{project.name}</h2>
     </div>
   );
 }

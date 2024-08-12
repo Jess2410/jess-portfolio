@@ -15,7 +15,7 @@ function Paints() {
   return (
     <>
       <section id='paints' className={styles.projects}>
-        <h1>Paintings</h1>
+        <h1>Creations</h1>
         <div className={styles.grid}>
           {paints.map((item, key) => {
             return <Paint key={key} item={item} />;

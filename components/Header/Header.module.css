@@ -63,7 +63,7 @@
   font-size: 24px;
 }
 .header_navbar_li_button {
-  margin: 0 2rem;
+  margin-left: 0 2rem;
   text-decoration: none;
   /* color: #796e73; */
   color: #72686d;
@@ -125,4 +125,9 @@
   .header {
     margin-bottom: 200px;
   }
+}
+
+.blurred {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.8);
 }

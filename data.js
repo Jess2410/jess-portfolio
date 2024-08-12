@@ -23,8 +23,9 @@ export const projectsData = {
       img: "/assets/fruithies.png",
       description:
         "FRUITHIES is a modern and vibrant branding project for a fictional smoothie company designed to showcase my design skills. The logo was created using AI and image editing in Canva, while the entire project was developed with Figma. The bold color palette, inspired by fresh fruits, includes bright yellows (#FCCE56), rosy reds (#F15763), and lime greens (#8BC743). The marketing materials emphasize the freshness and energy of the smoothies, targeting a young, health-conscious audience.",
-      skills: ["IA", "Canva", "Figma"],
+      skills: ["IA for images", "Canva", "Figma"],
       link: true,
+      categories: ["Design"],
     },
     {
       href: "https://the-aoj-light-5u46-1l3dbb5mp-jess2410s-projects.vercel.app/",
@@ -33,6 +34,7 @@ export const projectsData = {
       description:
         "I am designing a website for a CrossFit gym. The project requires an engaging and dynamic design to reflect the energy and community spirit of CrossFit. From the initial concepts to the final design, I am taking great pleasure in creating a website that captures the essence of their brand and will appeal to their audience.",
       skills: ["Figma"],
+      categories: ["Design"],
     },
     {
       href: "https://digitalfactory.kpconsulting.fr/",
@@ -54,6 +56,7 @@ export const projectsData = {
         "Strapi",
       ],
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "https://the-aoj-light-5u46-1l3dbb5mp-jess2410s-projects.vercel.app/",
@@ -82,6 +85,7 @@ export const projectsData = {
         "PostgreSQL",
       ],
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "https://github.com/Jess2410/MyCloud-front",
@@ -104,6 +108,7 @@ export const projectsData = {
         "MySQL",
       ],
       link: true,
+      categories: ["Web Development", "Design"],
     },
     {
       href: "https://github.com/Jess2410/jess-user-management-frontend-new",
@@ -129,6 +134,7 @@ export const projectsData = {
         "MySQL",
       ],
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "http://www.stepadvise.fr",
@@ -138,6 +144,7 @@ export const projectsData = {
         "The company StepAdvise, specialized in urban communication, needed a simple and informative website. I created the site as well as the mockup, and I took real pleasure in designing a site that corresponded to their image.",
       skills: ["Javascript", "Next JS", "Figma", "Agile", "Github", "Vercel"],
       link: true,
+      categories: ["Web Development", "Design"],
     },
     {
       href: "http://jess2410.github.io/Resto-Food/",
@@ -147,6 +154,7 @@ export const projectsData = {
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["HTML", "CSS", "Vercel"],
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "#",
@@ -155,6 +163,7 @@ export const projectsData = {
       description:
         "This logo was made for an application in progress by a team of developers. This is a fast delivery company.",
       skills: ["Procreate"],
+      categories: ["Design"],
     },
     {
       href: "http://github.com/Jess2410/website-responsive",
@@ -163,6 +172,7 @@ export const projectsData = {
       description:
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "http://github.com/Jess2410/chat-react-firebase",
@@ -172,6 +182,7 @@ export const projectsData = {
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["React", "Firebase"],
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "http://github.com/Jess2410/artjess-website",
@@ -191,6 +202,7 @@ export const projectsData = {
         "Paypal",
       ],
       link: true,
+      categories: ["Web Development", "Design"],
     },
     {
       href: "http://github.com/Jess2410/PetStore",
@@ -200,6 +212,7 @@ export const projectsData = {
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["HTML", "CSS", "Vercel"],
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "http://github.com/Jess2410/driveingreenfinal-prod",
@@ -209,6 +222,7 @@ export const projectsData = {
         "This is a site made as part of an apprenticeship. Drive In Green is an electric car rental company. We worked in a team of 3 on this project for which I carried out the mock-up and development in Angular.",
       skills: ["Angular", "Laravel", "Figma"],
       link: true,
+      categories: ["Web Development", "Design"],
     },
     {
       href: "http://jess2410.github.io/Complete-Responsive-Website/",
@@ -218,6 +232,7 @@ export const projectsData = {
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["HTML", "CSS", "Vercel"],
       link: true,
+      categories: ["Web Development"],
     },
     {
       href: "http://github.com/Jess2410/amazona",
@@ -227,6 +242,7 @@ export const projectsData = {
         "This website was created as part of my training in order to improve myself in the field of front-end.",
       skills: ["React", "Firebase", "Strapi"],
       link: true,
+      categories: ["Web Development"],
     },
   ],
 };
