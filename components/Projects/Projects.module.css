@@ -215,3 +215,31 @@
     grid-template-columns: 1fr;
   }
 }
+
+.chipContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.chip {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  color: #323d55;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.chip:hover {
+  background-color: #e0e0e0;
+}
+
+.chip.active {
+  background-color: #9f75ff;
+  color: white;
+}

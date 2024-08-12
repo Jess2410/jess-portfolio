@@ -6,6 +6,8 @@ import { useState } from "react";
 function Projects({ setProjectSelected, setShowModalProject }) {
   const { projects } = projectsData;
 
+  const categories = ["All", "Design", "Web Development"];
+
   const [categoryselected, setCategorySelected] = useState("All");
 
   const filteredProjects =
@@ -23,7 +25,20 @@ function Projects({ setProjectSelected, setShowModalProject }) {
   return (
     <section id='projects' className={styles.projects}>
       <h1>Projects</h1>
-      <div className={styles.select}>
+      <div className={styles.chipContainer}>
+        {categories.map((category) => (
+          <button
+            key={category}
+            className={`${styles.chip} ${
+              categoryselected === category ? styles.active : ""
+            }`}
+            onClick={() => setCategorySelected(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+      {/* <div className={styles.select}>
         <select
           name='categories'
           id='categories'
@@ -34,7 +49,7 @@ function Projects({ setProjectSelected, setShowModalProject }) {
           <option value='Design'>Design 🖌️</option>
           <option value='Web Development'>Web Development 💻</option>
         </select>
-      </div>
+      </div> */}
       <div className={styles.grid}>
         {filteredProjects.map((project, index) => (
           <Project
