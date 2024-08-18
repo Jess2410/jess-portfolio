@@ -18,6 +18,16 @@ export const servicesData = {
 export const projectsData = {
   projects: [
     {
+      href: "https://www.figma.com/design/DjY38HbypxJGpilLdh7Y19/Untitled?node-id=0-1&t=AqC3aaSkiRsrelu4-1",
+      name: "Vanessa Saboun",
+      img: "/assets/saboun.jpeg",
+      description:
+        "I am developing the brand identity for a training school specializing in post-operative aesthetic care. This project includes creating a cohesive visual identity that reflects the professionalism and care of the institution. The brand kit features a carefully selected color palette that evokes a sense of calm and trust, a clean and modern logo that embodies the school's focus on beauty and healing, and detailed training sheets that maintain consistency across all educational materials. The overall design aims to establish a strong, trustworthy, and professional presence for the school.",
+      skills: ["IA for images", "Canva"],
+      link: true,
+      categories: ["Design"],
+    },
+    {
       href: "https://www.figma.com/design/6iUysQ87OVwIfIA1RVPiPz/Fruithies?node-id=0-1&t=X9HOWavzzm44zFlY-1",
       name: "Fruithies",
       img: "/assets/fruithies.png",
@@ -25,6 +35,14 @@ export const projectsData = {
         "FRUITHIES is a modern and vibrant branding project for a fictional smoothie company designed to showcase my design skills. The logo was created using AI and image editing in Canva, while the entire project was developed with Figma. The bold color palette, inspired by fresh fruits, includes bright yellows (#FCCE56), rosy reds (#F15763), and lime greens (#8BC743). The marketing materials emphasize the freshness and energy of the smoothies, targeting a young, health-conscious audience.",
       skills: ["IA for images", "Canva", "Figma"],
       link: true,
+      categories: ["Design"],
+    },
+    {
+      name: "Majin Blade",
+      img: "/assets/majin.png",
+      description:
+        "I created a logo for Majin Blade Piercing a piercing studio. The design features Gothic-style lettering with a distressed, worn effect to convey an edgy, bold aesthetic. The logo is further embellished with intricate details of roses and piercing needles, symbolizing both beauty and precision. This combination of elements reflects the unique identity of the salon, merging the elegance of traditional Gothic art with the modern, sharp edge of body modification.",
+      skills: ["IA for images", "Canva", "Procreate"],
       categories: ["Design"],
     },
     {
@@ -262,6 +280,7 @@ export const skillsData = {
     { name: "AWS", img: "/assets/aws.jpg" },
     { name: "Canva", img: "/assets/canva.jpg" },
     { name: "Procreate", img: "/assets/procreate.jpg" },
+    { name: "Illustrator", img: "/assets/ai.png" },
     // { name: "Design & Logos", img: "/assets/designer.png" },
     { name: "UX/UI", img: "/assets/uxui.png" },
   ],
